@@ -1,0 +1,184 @@
+{
+  "navbar": {
+    "features": "Fonctionnalités",
+    "solutions": "Solutions",
+    "benefits": "Avantages",
+    "testimonials": "Témoignages",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "demo": "Demander une démo",
+    "callUs": "Appelez-nous"
+  },
+  "hero": {
+    "title": "Modernisez la communication avec les patients et la gestion de clinique",
+    "span": "communication",
+    "subtitle": "Centralisez les appels, les rendez-vous, les médecins, les patients et les interactions sociales au sein d'une plateforme intelligente de classe entreprise.",
+    "demoBtn": "Demander une démo",
+    "videoBtn": "Voir la vidéo",
+    "statsToday": "+124 Aujourd'hui",
+    "statsLabel": "Rendez-vous"
+  },
+  "trustedBy": {
+    "title": "Recommandé par les leaders de la santé dans le monde"
+  },
+  "features": {
+    "title": "Tout ce dont vous avez besoin pour gérer votre clinique en douceur",
+    "subtitle": "Une suite complète d'outils conçus spécifiquement pour la communication moderne dans le domaine de la santé.",
+    "routingTitle": "Routage et suivi des appels",
+    "routingDesc": "Gérez, orientez et surveillez tous les appels des patients de manière transparente sans perdre le fil.",
+    "analyticsTitle": "Analyses et indicateurs clés (KPI)",
+    "analyticsDesc": "Suivez les performances de la clinique grâce à des statistiques puissantes, des temps de réponse et des rapports sur le personnel.",
+    "mgmtTitle": "Gestion des médecins et des patients",
+    "mgmtDesc": "Organisez le personnel de santé, les dossiers des patients, les journaux d'activité et les antécédents médicaux en toute sécurité.",
+    "schedulingTitle": "Planification médicale",
+    "schedulingDesc": "Gérez efficacement les rendez-vous avec des systèmes de confirmation et de rappel automatiques.",
+    "socialTitle": "Communication sur les réseaux sociaux",
+    "socialDesc": "Gérez les interactions WhatsApp, Messenger et Instagram dans une seule boîte de réception unifiée.",
+    "centralizedTitle": "Informations centralisées",
+    "centralizedDesc": "Rassemblez toutes les communications médicales et les données des patients dans un portail de conformité sécurisé."
+  },
+  "whyChooseUs": {
+    "title": "Pourquoi choisir Call360 Clinica?",
+    "subtitle": "Nous permettons aux équipes médicales de se concentrer sur ce qui compte le plus : le soin des patients. En automatisant les tâches répétitives et en organisant la communication, Call360 Clinica est le pilier de votre transformation numérique.",
+    "efficiencyTitle": "Augmenter l'efficacité",
+    "efficiencyDesc": "Réduisez le travail administratif, évitez l'épuisement des réceptionnistes et améliorez la productivité.",
+    "experienceTitle": "Meilleure expérience patient",
+    "experienceDesc": "Offrez une communication plus rapide et plus professionnelle pour fidéliser durablement vos patients.",
+    "insightsTitle": "Analyses en temps réel",
+    "insightsDesc": "Surveillez instantanément les appels, les rendez-vous et les performances de l'équipe grâce à des tableaux de bord intelligents."
+  },
+  "dashboardShowcase": {
+    "title": "Conçu pour les équipes médicales modernes",
+    "subtitle": "Obtenez une vue d'ensemble du flux de travail de votre organisation de santé grâce à une interface de tableau de bord intuitive conçue pour la rapidité et la clarté.",
+    "doctorDashboard": "Tableau de bord médecin",
+    "receptionistDashboard": "Tableau de bord réceptionniste",
+    "adminDashboard": "Tableau de bord administrateur",
+    "doctorPoints": [
+      "Consulter le planning des patients du jour et les temps d'attente",
+      "Accéder aux dossiers des patients et aux antécédents médicaux en un clic",
+      "Canal de communication direct avec la réception et les laboratoires",
+      "Envoyer des mises à jour d'ordonnances et des notes de suivi"
+    ],
+    "receptionistPoints": [
+      "Routage des appels en direct et statut de la file d'attente active",
+      "Calendrier glisser-déposer pour la prise de rendez-vous",
+      "Boîte de réception multicanal (WhatsApp, SMS, Facebook Messenger)",
+      "Suivi instantané des admissions et des sorties"
+    ],
+    "adminPoints": [
+      "Statistiques sur le temps d'attente moyen des patients et les appels manqués",
+      "Allocation des ressources et évaluations des performances du personnel",
+      "Intégration avec la pharmacie, l'inventaire et les systèmes de facturation",
+      "Journaux de conformité HIPAA/RGPD et pistes d'audit"
+    ],
+    "featuresLabel": "Principales caractéristiques"
+  },
+  "benefits": {
+    "title": "Conçu pour chaque organisation de santé",
+    "subtitle": "Quelle que soit la taille ou la spécialité, notre plateforme s'adapte à vos besoins spécifiques.",
+    "organizations": {
+      "clinics": "Cliniques",
+      "hospitals": "Hôpitaux",
+      "dentalPractices": "Cabinets Dentaires",
+      "psychologyCenters": "Centres de Psychologie",
+      "physiotherapyCenters": "Centres de Physiothérapie",
+      "laboratories": "Laboratoires",
+      "pharmacies": "Pharmacies"
+    }
+  },
+  "testimonials": {
+    "title": "Approuvé par les leaders de la santé",
+    "subtitle": "Découvrez ce que les professionnels de la santé disent de leur expérience avec Call360 Clinica.",
+    "jenkinsContent": "Call360 Clinica a complètement transformé notre façon de gérer les demandes des patients. Le tableau de bord centralisé est un outil indispensable pour notre personnel.",
+    "jenkinsRole": "Chef de cardiologie, Hôpital central de la ville",
+    "rossiContent": "Nous avons constaté une réduction de 40 % des rendez-vous manqués depuis la mise en œuvre de leur planification médicale et de leurs rappels automatisés.",
+    "rossiRole": "Directeur de clinique, Centre dentaire Rossi",
+    "chenContent": "La possibilité de suivre nos interactions sur les réseaux sociaux en parallèle des appels téléphoniques nous donne une vue complète de nos communications avec les patients.",
+    "chenRole": "Psychologue clinicienne, Clinique d'esprit et de bien-être"
+  },
+  "faq": {
+    "title": "Questions fréquemment posées",
+    "subtitle": "Trouvez des réponses aux questions courantes sur Call360 Clinica et découvrez comment elle peut transformer la communication de votre organisation de santé.",
+    "q1": "Call360 Clinica peut-elle gérer les rendez-vous?",
+    "a1": "Oui, notre plateforme comprend un système de planification médicale robuste qui vous permet de réserver, reporter et gérer facilement les rendez-vous des patients sur plusieurs calendriers et médecins.",
+    "q2": "La plateforme prend-elle en charge plusieurs médecins?",
+    "a2": "Absolument. Vous pouvez gérer les plannings, les affectations de patients et les canaux de communication spécifiques pour autant de médecins que vous le souhaitez au sein de votre clinique ou hôpital.",
+    "q3": "Puis-je surveiller les performances de l'équipe?",
+    "a3": "Oui, notre tableau de bord d'analyse avancée fournit des informations en temps réel sur les temps de résolution des appels, les taux de conversion des rendez-vous et l'efficacité globale de l'équipe.",
+    "q4": "Les interactions sur les réseaux sociaux peuvent-elles être suivies?",
+    "a4": "Oui, Call360 Clinica centralise les messages et les demandes provenant de diverses plateformes de réseaux sociaux dans une boîte de réception unique et unifiée, garantissant qu'aucune demande de patient ne soit oubliée.",
+    "q5": "La plateforme est-elle adaptée aux cliniques dentaires?",
+    "a5": "Oui, la plateforme est très adaptable et est actuellement utilisée par des centres dentaires, des hôpitaux, des psychologues, des physiothérapeutes et des pharmacies.",
+    "stillQuestions": "Vous avez encore des questions ?",
+    "readyHelp": "Notre équipe est prête à vous aider à trouver la bonne solution.",
+    "contactSupport": "Contacter le support"
+  },
+  "cta": {
+    "title": "Transformez la façon dont vous gérez les relations avec les patients",
+    "subtitle": "Donnez à vos équipes médicales les moyens d'agir grâce à une plateforme de communication centralisée et entrez dans l'avenir de la santé.",
+    "demoBtn": "Planifier une démo",
+    "salesBtn": "Parler à un conseiller"
+  },
+  "footer": {
+    "desc": "La plateforme leader de communication médicale et de gestion de cliniques. Centralisez vos appels, vos rendez-vous et vos données dans un endroit sécurisé.",
+    "contact": "Contactez-nous",
+    "product": "Produit",
+    "features": "Fonctionnalités",
+    "integrations": "Intégrations",
+    "pricing": "Tarification",
+    "updates": "Mises à jour",
+    "solutions": "Solutions",
+    "clinics": "Pour les cliniques",
+    "hospitals": "Pour les hôpitaux",
+    "dental": "Pour les centres dentaires",
+    "labs": "Pour les laboratoires",
+    "company": "Entreprise",
+    "about": "À propos de nous",
+    "careers": "Carrières",
+    "support": "Assistance",
+    "contactLink": "Contact",
+    "rights": "Tous droits réservés.",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d'utilisation"
+  },
+  "statistics": {
+    "title": "Autonomiser les organisations de santé avec des résultats prouvés",
+    "subtitle": "Notre logiciel s'intègre profondément dans les opérations cliniques pour garantir une fidélisation élevée et zéro patient oublié.",
+    "stat1Val": "99,8%",
+    "stat1Lbl": "Disponibilité et fiabilité des appels",
+    "stat2Val": "40%",
+    "stat2Lbl": "Réduction des rendez-vous manqués",
+    "stat3Val": "150K+",
+    "stat3Lbl": "Patients servis mensuellement",
+    "stat4Val": "15 min",
+    "stat4Lbl": "Gagnées par employé chaque jour"
+  },
+  "comparison": {
+    "title": "Clinique traditionnelle vs Clinique numérique (Call360)",
+    "subtitle": "Voyez comment l'adoption de notre plateforme intelligente améliore complètement l'efficacité du flux de travail de la clinique.",
+    "traditional": "Gestion traditionnelle",
+    "digital": "Gestion numérique Call360",
+    "points": [
+      {
+        "label": "Réservation des patients",
+        "old": "Registres manuels, tonalités d'occupation, erreurs de double réservation.",
+        "new": "Réservation en ligne 24h/24 et 7j/7, confirmations automatiques, synchronisation du calendrier."
+      },
+      {
+        "label": "Traitement des appels",
+        "old": "Réceptionniste débordée, aucun suivi des rappels manqués.",
+        "new": "Routage intelligent, surveillance de la file d'attente, journaux d'appels et données instantanés."
+      },
+      {
+        "label": "Réseaux sociaux",
+        "old": "Le personnel jongle entre WhatsApp, Instagram et le téléphone.",
+        "new": "Tous les canaux centralisés dans une boîte de réception unique et professionnelle."
+      },
+      {
+        "label": "Dossier du patient",
+        "old": "Recherche dans des dossiers papier ou d'anciens systèmes distincts.",
+        "new": "Fiche unique avec dossiers médicaux, appels passés et historique des SMS."
+      }
+    ]
+  }
+}

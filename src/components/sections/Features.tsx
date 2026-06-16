@@ -4,37 +4,41 @@ import { motion } from "framer-motion";
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Phone, BarChart3, Users, Calendar, MessageCircle, Database } from "lucide-react";
 
-export default function Features() {
+interface FeaturesProps {
+  dict: any;
+}
+
+export default function Features({ dict }: FeaturesProps) {
   const features = [
     {
-      title: "Call Routing and Tracking",
+      title: dict.routingTitle,
       icon: <Phone className="w-6 h-6 text-primary" />,
-      description: "Manage and monitor all patient calls.",
+      description: dict.routingDesc,
     },
     {
-      title: "Analytics and KPIs",
+      title: dict.analyticsTitle,
       icon: <BarChart3 className="w-6 h-6 text-secondary" />,
-      description: "Track performance with powerful statistics.",
+      description: dict.analyticsDesc,
     },
     {
-      title: "Doctors and Patients Management",
+      title: dict.mgmtTitle,
       icon: <Users className="w-6 h-6 text-primary" />,
-      description: "Organize healthcare staff and patient records.",
+      description: dict.mgmtDesc,
     },
     {
-      title: "Medical Scheduling",
+      title: dict.schedulingTitle,
       icon: <Calendar className="w-6 h-6 text-secondary" />,
-      description: "Manage appointments efficiently.",
+      description: dict.schedulingDesc,
     },
     {
-      title: "Social Media Communication",
+      title: dict.socialTitle,
       icon: <MessageCircle className="w-6 h-6 text-primary" />,
-      description: "Handle interactions across social platforms.",
+      description: dict.socialDesc,
     },
     {
-      title: "Centralized Information",
+      title: dict.centralizedTitle,
       icon: <Database className="w-6 h-6 text-secondary" />,
-      description: "Bring all communication and data together.",
+      description: dict.centralizedDesc,
     },
   ];
 
@@ -43,7 +47,7 @@ export default function Features() {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.1,
+        staggerChildren: 0.08,
       },
     },
   };
@@ -54,14 +58,17 @@ export default function Features() {
   };
 
   return (
-    <section id="features" className="py-20 md:py-32 bg-white">
-      <div className="container mx-auto px-4 md:px-6">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-            Everything you need to run your clinic smoothly
+    <section id="features" className="py-20 md:py-32 bg-white relative">
+      {/* Background soft glow to eliminate white space emptiness */}
+      <div className="absolute top-1/3 left-1/4 w-[500px] h-[500px] bg-slate-50 rounded-full blur-3xl opacity-60 pointer-events-none"></div>
+      
+      <div className="container mx-auto px-4 md:px-6 relative z-10">
+        <div className="text-center max-w-3xl mx-auto mb-20">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-6 tracking-tight">
+            {dict.title}
           </h2>
-          <p className="text-lg text-slate-600">
-            A comprehensive suite of tools designed specifically for modern healthcare communication.
+          <p className="text-lg md:text-xl text-slate-500 max-w-2xl mx-auto leading-relaxed">
+            {dict.subtitle}
           </p>
         </div>
 
@@ -74,13 +81,15 @@ export default function Features() {
         >
           {features.map((feature, index) => (
             <motion.div key={index} variants={itemVariants}>
-              <Card className="h-full border border-slate-100 hover:border-primary/20 hover:shadow-xl transition-all duration-300 group cursor-pointer">
-                <CardHeader>
-                  <div className="w-14 h-14 rounded-2xl bg-slate-50 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-blue-50 transition-all duration-300">
+              <Card className="h-full border border-slate-100/80 shadow-md hover:shadow-xl hover:border-primary/20 transition-all duration-300 group cursor-pointer bg-white">
+                <CardHeader className="p-8">
+                  <div className="w-14 h-14 rounded-2xl bg-slate-50 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-sky-50 transition-all duration-300 shadow-sm">
                     {feature.icon}
                   </div>
-                  <CardTitle className="text-xl mb-2">{feature.title}</CardTitle>
-                  <CardDescription className="text-base text-slate-500">
+                  <CardTitle className="text-xl font-bold mb-3 text-slate-900 group-hover:text-primary transition-colors">
+                    {feature.title}
+                  </CardTitle>
+                  <CardDescription className="text-base text-slate-500 leading-relaxed text-start">
                     {feature.description}
                   </CardDescription>
                 </CardHeader>

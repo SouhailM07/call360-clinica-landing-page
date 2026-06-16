@@ -1,0 +1,184 @@
+{
+  "navbar": {
+    "features": "Features",
+    "solutions": "Solutions",
+    "benefits": "Benefits",
+    "testimonials": "Testimonials",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "demo": "Request Demo",
+    "callUs": "Call Us"
+  },
+  "hero": {
+    "title": "Modernize Patient Communication and Clinic Management",
+    "span": "Communication",
+    "subtitle": "Centralize calls, appointments, doctors, patients and social interactions inside one intelligent, enterprise-grade platform.",
+    "demoBtn": "Request a Demo",
+    "videoBtn": "Watch Video",
+    "statsToday": "+124 Today",
+    "statsLabel": "Appointments"
+  },
+  "trustedBy": {
+    "title": "Trusted by Healthcare Leaders Worldwide"
+  },
+  "features": {
+    "title": "Everything you need to run your clinic smoothly",
+    "subtitle": "A comprehensive suite of tools designed specifically for modern healthcare communication.",
+    "routingTitle": "Call Routing and Tracking",
+    "routingDesc": "Manage, route and monitor all patient calls seamlessly without losing track.",
+    "analyticsTitle": "Analytics and KPIs",
+    "analyticsDesc": "Track clinic performance with powerful statistics, response times, and staff reports.",
+    "mgmtTitle": "Doctors & Patients Management",
+    "mgmtDesc": "Organize healthcare staff, patient files, logs, and medical histories securely.",
+    "schedulingTitle": "Medical Scheduling",
+    "schedulingDesc": "Manage appointments efficiently with automatic confirmations and reminder systems.",
+    "socialTitle": "Social Media Communication",
+    "socialDesc": "Handle WhatsApp, Messenger, and Instagram interactions in a single unified inbox.",
+    "centralizedTitle": "Centralized Information",
+    "centralizedDesc": "Bring all medical communication and patient data together in a secure compliance portal."
+  },
+  "whyChooseUs": {
+    "title": "Why Choose Call360 Clinica?",
+    "subtitle": "We empower medical teams to focus on what matters most: patient care. By automating repetitive tasks and organizing communication, Call360 Clinica acts as the backbone of your digital transformation.",
+    "efficiencyTitle": "Increase Efficiency",
+    "efficiencyDesc": "Reduce administrative work, prevent receptionist burnout, and improve productivity.",
+    "experienceTitle": "Better Patient Experience",
+    "experienceDesc": "Deliver faster, more professional communication to build lasting patient loyalty.",
+    "insightsTitle": "Real-Time Insights",
+    "insightsDesc": "Monitor calls, appointments, and staff performance instantly with smart dashboards."
+  },
+  "dashboardShowcase": {
+    "title": "Designed for Modern Medical Teams",
+    "subtitle": "Get a bird's eye view of your entire healthcare organization's workflow with an intuitive dashboard interface built for speed and clarity.",
+    "doctorDashboard": "Doctor Dashboard",
+    "receptionistDashboard": "Receptionist Dashboard",
+    "adminDashboard": "Admin Dashboard",
+    "doctorPoints": [
+      "View today's patient schedule and wait times",
+      "Access patient files and medical histories in one click",
+      "Direct communication channel with receptionist and labs",
+      "Send prescription updates and follow-up notes"
+    ],
+    "receptionistPoints": [
+      "Live call routing and active queue status",
+      "Drag-and-drop calendar for booking appointments",
+      "Multi-channel inbox (WhatsApp, SMS, Facebook Messenger)",
+      "Instant check-in and check-out tracking"
+    ],
+    "adminPoints": [
+      "Analytics on average patient wait time and missed calls",
+      "Resource allocation and staff performance reviews",
+      "Integration with pharmacy, inventory, and billing systems",
+      "HIPAA/GDPR compliance logs and audit trails"
+    ],
+    "featuresLabel": "Key Features"
+  },
+  "benefits": {
+    "title": "Built for Every Healthcare Organization",
+    "subtitle": "No matter the size or specialty, our platform adapts to your unique workflow requirements.",
+    "organizations": {
+      "clinics": "Clinics",
+      "hospitals": "Hospitals",
+      "dentalPractices": "Dental Practices",
+      "psychologyCenters": "Psychology Centers",
+      "physiotherapyCenters": "Physiotherapy Centers",
+      "laboratories": "Laboratories",
+      "pharmacies": "Pharmacies"
+    }
+  },
+  "testimonials": {
+    "title": "Trusted by Healthcare Leaders",
+    "subtitle": "See what medical professionals have to say about their experience with Call360 Clinica.",
+    "jenkinsContent": "Call360 Clinica completely transformed how we handle patient inquiries. The centralized dashboard is a game-changer for our staff.",
+    "jenkinsRole": "Head of Cardiology, City Central Hospital",
+    "rossiContent": "We've seen a 40% reduction in missed appointments since implementing their medical scheduling and automated reminders.",
+    "rossiRole": "Clinic Manager, Rossi Dental Center",
+    "chenContent": "The ability to track our social media interactions alongside phone calls gives us a complete view of our patient communications.",
+    "chenRole": "Clinical Psychologist, Mind & Wellness Clinic"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Find answers to common questions about Call360 Clinica and how it can transform your healthcare organization's communication.",
+    "q1": "Can Call360 Clinica manage appointments?",
+    "a1": "Yes, our platform includes a robust medical scheduling system that allows you to easily book, reschedule, and manage patient appointments across multiple calendars and doctors.",
+    "q2": "Does the platform support multiple doctors?",
+    "a2": "Absolutely. You can manage schedules, patient assignments, and specific communication channels for any number of doctors within your clinic or hospital.",
+    "q3": "Can I monitor team performance?",
+    "a3": "Yes, our advanced analytics dashboard provides real-time insights into call resolution times, appointment conversion rates, and overall team efficiency.",
+    "q4": "Can social media interactions be tracked?",
+    "a4": "Yes, Call360 Clinica centralizes messages and inquiries from various social media platforms into a single unified inbox, ensuring no patient query is missed.",
+    "q5": "Is the platform suitable for dental clinics?",
+    "a5": "Yes, the platform is highly adaptable and is currently used by dental centers, hospitals, psychologists, physiotherapists, and pharmacies.",
+    "stillQuestions": "Still have questions?",
+    "readyHelp": "Our team is ready to help you find the right solution.",
+    "contactSupport": "Contact Support"
+  },
+  "cta": {
+    "title": "Transform the Way You Manage Patient Relationships",
+    "subtitle": "Empower your medical teams with a centralized communication platform and step into the future of healthcare.",
+    "demoBtn": "Schedule a Demo",
+    "salesBtn": "Talk to Sales"
+  },
+  "footer": {
+    "desc": "The leading healthcare communication and clinic management platform. Centralize your calls, appointments, and data in one secure place.",
+    "contact": "Contact Us",
+    "product": "Product",
+    "features": "Features",
+    "integrations": "Integrations",
+    "pricing": "Pricing",
+    "updates": "Updates",
+    "solutions": "Solutions",
+    "clinics": "For Clinics",
+    "hospitals": "For Hospitals",
+    "dental": "For Dental Centers",
+    "labs": "For Laboratories",
+    "company": "Company",
+    "about": "About Us",
+    "careers": "Careers",
+    "support": "Support",
+    "contactLink": "Contact",
+    "rights": "All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "statistics": {
+    "title": "Empowering Healthcare Organizations with Proven Results",
+    "subtitle": "Our software integrates deep into clinic operations to drive high retention and zero missed patients.",
+    "stat1Val": "99.8%",
+    "stat1Lbl": "Uptime & Call Reliability",
+    "stat2Val": "40%",
+    "stat2Lbl": "Reduction in Missed Appointments",
+    "stat3Val": "150K+",
+    "stat3Lbl": "Patients Served Monthly",
+    "stat4Val": "15 Mins",
+    "stat4Lbl": "Saved Per Employee Daily"
+  },
+  "comparison": {
+    "title": "Traditional Clinic vs Digital Clinic (Call360)",
+    "subtitle": "See how adopting our intelligent platform completely upgrades clinic workflow efficiency.",
+    "traditional": "Traditional Management",
+    "digital": "Digital Call360 Management",
+    "points": [
+      {
+        "label": "Patient Booking",
+        "old": "Manual logs, phone busy tones, double-booking errors.",
+        "new": "24/7 online booking, automated confirmations, calendar syncing."
+      },
+      {
+        "label": "Call Handling",
+        "old": "Receptionist overwhelmed, no tracking of missed callbacks.",
+        "new": "Smart routing, queue monitoring, instant call logs and data."
+      },
+      {
+        "label": "Social Channels",
+        "old": "Staff switching between WhatsApp, Instagram and phone.",
+        "new": "All channels centralized in one single professional inbox."
+      },
+      {
+        "label": "Patient History",
+        "old": "Searching through paper files or separate old systems.",
+        "new": "Unified card with medical logs, past calls, and SMS history."
+      }
+    ]
+  }
+}

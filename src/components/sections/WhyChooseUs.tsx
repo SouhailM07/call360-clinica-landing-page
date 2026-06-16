@@ -1,37 +1,52 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { CheckCircle2 } from "lucide-react";
+import { CheckCircle2, TrendingUp, HeartHandshake, Compass } from "lucide-react";
 
-export default function WhyChooseUs() {
+interface WhyChooseUsProps {
+  dict: any;
+}
+
+export default function WhyChooseUs({ dict }: WhyChooseUsProps) {
   const cards = [
     {
-      title: "Increase Efficiency",
-      description: "Reduce administrative work and improve productivity across your entire team.",
+      title: dict.efficiencyTitle,
+      description: dict.efficiencyDesc,
+      icon: <TrendingUp className="w-6 h-6 text-secondary" />,
     },
     {
-      title: "Better Patient Experience",
-      description: "Deliver faster and more professional communication to build lasting trust.",
+      title: dict.experienceTitle,
+      description: dict.experienceDesc,
+      icon: <HeartHandshake className="w-6 h-6 text-primary" />,
     },
     {
-      title: "Real-Time Insights",
-      description: "Monitor calls and team performance instantly with dynamic dashboards.",
+      title: dict.insightsTitle,
+      description: dict.insightsDesc,
+      icon: <Compass className="w-6 h-6 text-secondary" />,
     },
   ];
 
   return (
-    <section id="solutions" className="py-20 md:py-32 bg-slate-50">
-      <div className="container mx-auto px-4 md:px-6">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+    <section id="solutions" className="py-20 md:py-32 bg-slate-50 relative overflow-hidden">
+      {/* Visual background details to eliminate empty layout feeling */}
+      <div className="absolute right-0 top-10 w-96 h-96 bg-primary/5 rounded-full blur-3xl pointer-events-none"></div>
+      <div className="absolute left-0 bottom-10 w-[500px] h-[500px] bg-secondary/5 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div className="container mx-auto px-4 md:px-6 relative z-10">
+        <div className="grid lg:grid-cols-12 gap-16 items-center">
           
-          {/* Left: Text */}
-          <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
-              Why Choose <span className="text-primary">Call360 Clinica</span>?
-            </h2>
-            <p className="text-lg text-slate-600 mb-8 leading-relaxed">
-              We empower medical teams to focus on what matters most: patient care. By automating repetitive tasks and organizing communication, Call360 Clinica acts as the backbone of your digital transformation.
-            </p>
+          {/* Left: Text & Reasons */}
+          <div className="lg:col-span-7 space-y-8">
+            <div className="space-y-4">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 tracking-tight">
+                {dict.title.split("Call360 Clinica")[0]}
+                <span className="text-primary font-extrabold">Call360 Clinica</span>
+                {dict.title.split("Call360 Clinica")[1]}
+              </h2>
+              <p className="text-lg md:text-xl text-slate-500 leading-relaxed">
+                {dict.subtitle}
+              </p>
+            </div>
             
             <div className="space-y-6">
               {cards.map((card, index) => (
@@ -40,17 +55,17 @@ export default function WhyChooseUs() {
                   initial={{ opacity: 0, x: -20 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="flex gap-4"
+                  transition={{ duration: 0.5, delay: index * 0.08 }}
+                  className="flex gap-4 p-5 bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow duration-300"
                 >
-                  <div className="mt-1 flex-shrink-0">
-                    <CheckCircle2 className="w-6 h-6 text-secondary" />
+                  <div className="mt-1 flex-shrink-0 w-12 h-12 rounded-xl bg-slate-50 flex items-center justify-center shadow-inner">
+                    {card.icon}
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-slate-900 mb-2">
+                    <h3 className="text-xl font-bold text-slate-900 mb-2 text-start">
                       {card.title}
                     </h3>
-                    <p className="text-slate-600">
+                    <p className="text-slate-500 text-base leading-relaxed text-start">
                       {card.description}
                     </p>
                   </div>
@@ -59,14 +74,14 @@ export default function WhyChooseUs() {
             </div>
           </div>
 
-          {/* Right: Visual */}
-          <div className="relative">
+          {/* Right: Visual Instagram Embed Video */}
+          <div className="lg:col-span-5 relative">
             <motion.div
-              initial={{ opacity: 0, scale: 0.95 }}
+              initial={{ opacity: 0, scale: 0.98 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.7 }}
-              className="relative w-full rounded-3xl overflow-hidden bg-slate-100 flex items-center justify-center shadow-xl h-[600px]"
+              className="relative w-full rounded-3xl overflow-hidden bg-slate-100 flex items-center justify-center shadow-2xl h-[550px] border border-slate-200"
             >
               <iframe
                 src="https://www.instagram.com/reel/DTdArEBiL_Z/embed"
@@ -77,6 +92,8 @@ export default function WhyChooseUs() {
                 allow="encrypted-media"
               ></iframe>
             </motion.div>
+            {/* Absolute overlay frames to elevate looks */}
+            <div className="absolute -inset-4 border border-primary/5 rounded-[2.5rem] pointer-events-none -z-10"></div>
           </div>
 
         </div>
