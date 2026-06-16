@@ -6,14 +6,14 @@
     "testimonials": "Témoignages",
     "faq": "FAQ",
     "contact": "Contact",
-    "demo": "Demander une démo",
+    "demo": "Prendre RDV",
     "callUs": "Appelez-nous"
   },
   "hero": {
     "title": "Modernisez la communication avec les patients et la gestion de clinique",
     "span": "communication",
     "subtitle": "Centralisez les appels, les rendez-vous, les médecins, les patients et les interactions sociales au sein d'une plateforme intelligente de classe entreprise.",
-    "demoBtn": "Demander une démo",
+    "demoBtn": "Prendre RDV →",
     "videoBtn": "Voir la vidéo",
     "statsToday": "+124 Aujourd'hui",
     "statsLabel": "Rendez-vous"
@@ -116,7 +116,7 @@
   "cta": {
     "title": "Transformez la façon dont vous gérez les relations avec les patients",
     "subtitle": "Donnez à vos équipes médicales les moyens d'agir grâce à une plateforme de communication centralisée et entrez dans l'avenir de la santé.",
-    "demoBtn": "Planifier une démo",
+    "demoBtn": "Prendre RDV →",
     "salesBtn": "Parler à un conseiller"
   },
   "footer": {

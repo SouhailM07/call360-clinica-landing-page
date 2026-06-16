@@ -1,14 +1,16 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { PlayCircle, ArrowRight, CheckCircle2, Shield, Sparkles } from "lucide-react";
+import { PlayCircle, ArrowRight, CheckCircle2, Shield, Sparkles, X } from "lucide-react";
 
 interface HeroProps {
   dict: any;
 }
 
 export default function Hero({ dict }: HeroProps) {
+  const [isVideoOpen, setIsVideoOpen] = useState(false);
   return (
     <section className="relative pt-32 pb-20 md:pt-48 md:pb-36 overflow-hidden bg-slate-900 text-white">
       {/* Background Gradients & Effects */}
@@ -100,7 +102,12 @@ export default function Hero({ dict }: HeroProps) {
                 {dict.demoBtn}
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform rtl:rotate-180 rtl:group-hover:-translate-x-1" />
               </Button>
-              <Button size="lg" variant="outline" className="text-slate-900 bg-white hover:bg-slate-50 border-white text-base font-bold px-8 h-14 shadow-md">
+              <Button
+                size="lg"
+                variant="outline"
+                onClick={() => setIsVideoOpen(true)}
+                className="text-slate-900 bg-white hover:bg-slate-50 border-white text-base font-bold px-8 h-14 shadow-md"
+              >
                 <PlayCircle className="mr-2 w-5 h-5 text-primary" />
                 {dict.videoBtn}
               </Button>
@@ -233,6 +240,46 @@ export default function Hero({ dict }: HeroProps) {
 
         </div>
       </div>
+
+      {/* Video Modal */}
+      <AnimatePresence>
+        {isVideoOpen && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => setIsVideoOpen(false)}
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/85 backdrop-blur-md p-4"
+          >
+            <motion.div
+              initial={{ scale: 0.95, opacity: 0, y: 20 }}
+              animate={{ scale: 1, opacity: 1, y: 0 }}
+              exit={{ scale: 0.95, opacity: 0, y: 20 }}
+              transition={{ duration: 0.3 }}
+              onClick={(e) => e.stopPropagation()}
+              className="bg-slate-950 border border-slate-800 rounded-3xl overflow-hidden max-w-4xl w-full aspect-video shadow-2xl relative"
+            >
+              {/* Close Button */}
+              <button
+                onClick={() => setIsVideoOpen(false)}
+                className="absolute top-4 right-4 z-10 p-2.5 bg-slate-900/80 hover:bg-slate-800 border border-slate-800 rounded-full text-white/80 hover:text-white transition-all shadow-md cursor-pointer"
+              >
+                <X className="w-5 h-5" />
+              </button>
+
+              {/* Video Content */}
+              <iframe
+                src="https://www.instagram.com/reel/DTdArEBiL_Z/embed"
+                className="w-full h-full border-0"
+                frameBorder="0"
+                scrolling="no"
+                allowTransparency={true}
+                allow="encrypted-media; autoplay"
+              ></iframe>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </section>
   );
 }

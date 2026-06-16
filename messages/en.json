@@ -6,14 +6,14 @@
     "testimonials": "Testimonials",
     "faq": "FAQ",
     "contact": "Contact",
-    "demo": "Request Demo",
+    "demo": "Book a Meeting",
     "callUs": "Call Us"
   },
   "hero": {
     "title": "Modernize Patient Communication and Clinic Management",
     "span": "Communication",
     "subtitle": "Centralize calls, appointments, doctors, patients and social interactions inside one intelligent, enterprise-grade platform.",
-    "demoBtn": "Request a Demo",
+    "demoBtn": "Book a Meeting →",
     "videoBtn": "Watch Video",
     "statsToday": "+124 Today",
     "statsLabel": "Appointments"
@@ -116,7 +116,7 @@
   "cta": {
     "title": "Transform the Way You Manage Patient Relationships",
     "subtitle": "Empower your medical teams with a centralized communication platform and step into the future of healthcare.",
-    "demoBtn": "Schedule a Demo",
+    "demoBtn": "Book a Meeting →",
     "salesBtn": "Talk to Sales"
   },
   "footer": {
