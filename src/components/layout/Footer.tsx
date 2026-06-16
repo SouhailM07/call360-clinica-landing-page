@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { Phone } from "lucide-react";
 
 export default function Footer() {
@@ -11,9 +12,7 @@ export default function Footer() {
           
           <div className="lg:col-span-2">
             <Link href="/" className="inline-block mb-6">
-              <span className="text-2xl font-bold text-white">
-                Call360<span className="text-secondary">.</span>Clinica
-              </span>
+              <Image src="/logo.png" alt="Call360 Clinica Logo" width={160} height={40} className="h-10 w-auto brightness-0 invert opacity-90" />
             </Link>
             <p className="text-slate-400 mb-8 max-w-sm">
               The leading healthcare communication and clinic management platform. Centralize your calls, appointments, and data in one secure place.

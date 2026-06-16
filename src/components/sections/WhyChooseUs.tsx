@@ -66,33 +66,16 @@ export default function WhyChooseUs() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.7 }}
-              className="relative aspect-square md:aspect-[4/3] rounded-3xl overflow-hidden bg-gradient-to-br from-primary to-indigo-900 p-8 flex items-center justify-center"
+              className="relative w-full rounded-3xl overflow-hidden bg-slate-100 flex items-center justify-center shadow-xl h-[600px]"
             >
-              <div className="absolute inset-0 bg-[url('https://compusave.dz/build/assets/pattern-bg.svg')] opacity-10 bg-cover"></div>
-              
-              {/* Abstract interface element */}
-              <div className="relative w-full max-w-md bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 shadow-2xl">
-                <div className="flex justify-between items-center mb-8">
-                  <div className="w-1/2 h-4 bg-white/20 rounded"></div>
-                  <div className="w-10 h-10 rounded-full bg-secondary/80"></div>
-                </div>
-                <div className="space-y-4">
-                  <div className="w-full h-3 bg-white/10 rounded"></div>
-                  <div className="w-4/5 h-3 bg-white/10 rounded"></div>
-                  <div className="w-full h-3 bg-white/10 rounded"></div>
-                </div>
-                
-                <div className="mt-8 grid grid-cols-2 gap-4">
-                  <div className="h-20 bg-white/5 rounded-xl border border-white/10 p-3">
-                     <div className="w-8 h-8 rounded-lg bg-secondary/50 mb-2"></div>
-                     <div className="w-1/2 h-2 bg-white/20 rounded"></div>
-                  </div>
-                  <div className="h-20 bg-white/5 rounded-xl border border-white/10 p-3">
-                     <div className="w-8 h-8 rounded-lg bg-primary/50 mb-2"></div>
-                     <div className="w-1/2 h-2 bg-white/20 rounded"></div>
-                  </div>
-                </div>
-              </div>
+              <iframe
+                src="https://www.instagram.com/reel/DTdArEBiL_Z/embed"
+                className="w-full h-full border-0"
+                frameBorder="0"
+                scrolling="no"
+                allowTransparency={true}
+                allow="encrypted-media"
+              ></iframe>
             </motion.div>
           </div>
 

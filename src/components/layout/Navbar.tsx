@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -39,9 +40,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-8">
             <Link href="/" className="flex items-center gap-2">
-              <span className={`text-2xl font-bold ${isScrolled ? 'text-primary' : 'text-primary md:text-white'}`}>
-                Call360<span className="text-secondary">.</span>Clinica
-              </span>
+              <Image src="/logo.png" alt="Call360 Clinica Logo" width={160} height={40} className={`h-10 w-auto transition-all ${!isScrolled ? "brightness-0 invert md:brightness-100 md:invert-0" : ""}`} />
             </Link>
 
             {/* Desktop Navigation */}
