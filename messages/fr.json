@@ -13,13 +13,14 @@
     "title": "Modernisez la communication avec les patients et la gestion de clinique",
     "span": "communication",
     "subtitle": "Centralisez les appels, les rendez-vous, les médecins, les patients et les interactions sociales au sein d'une plateforme intelligente de classe entreprise.",
+    "tagline": "Optimisé pour les flux de travail de communication médicale",
     "demoBtn": "Prendre RDV →",
     "videoBtn": "Voir la vidéo",
     "statsToday": "+124 Aujourd'hui",
     "statsLabel": "Rendez-vous"
   },
   "trustedBy": {
-    "title": "Recommandé par les leaders de la santé dans le monde"
+    "title": "Utilisé par les cliniques, les cabinets dentaires et les cabinets privés en Algérie"
   },
   "features": {
     "title": "Tout ce dont vous avez besoin pour gérer votre clinique en douceur",
@@ -115,9 +116,15 @@
   },
   "cta": {
     "title": "Transformez la façon dont vous gérez les relations avec les patients",
-    "subtitle": "Donnez à vos équipes médicales les moyens d'agir grâce à une plateforme de communication centralisée et entrez dans l'avenir de la santé.",
-    "demoBtn": "Prendre RDV →",
-    "salesBtn": "Parler à un conseiller"
+    "subtitle": "Contactez notre équipe pour trouver la meilleure solution pour votre clinique.",
+    "nameLabel": "Nom Complet",
+    "namePlaceholder": "Jean Dupont",
+    "emailLabel": "Adresse Email",
+    "emailPlaceholder": "jean@example.com",
+    "messageLabel": "Votre Message",
+    "messagePlaceholder": "Parlez-nous des besoins de votre clinique...",
+    "submitBtn": "Prendre RDV →",
+    "successMsg": "Merci! Votre message a été envoyé avec succès."
   },
   "footer": {
     "desc": "La plateforme leader de communication médicale et de gestion de cliniques. Centralisez vos appels, vos rendez-vous et vos données dans un endroit sécurisé.",

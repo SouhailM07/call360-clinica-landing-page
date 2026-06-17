@@ -1,9 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { PlayCircle, ArrowRight, CheckCircle2, Shield, Sparkles, X } from "lucide-react";
+import { PlayCircle, ArrowRight, CheckCircle2, Shield, Sparkles, X, PhoneCall, UserCheck, Headset, PhoneOff, Calendar } from "lucide-react";
 
 interface HeroProps {
   dict: any;
@@ -11,6 +11,54 @@ interface HeroProps {
 
 export default function Hero({ dict }: HeroProps) {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
+  const [activeNode, setActiveNode] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setActiveNode((prev) => (prev + 1) % 4);
+    }, 3000);
+    return () => clearInterval(timer);
+  }, []);
+
+  const orbitNodes = [
+    {
+      id: 0,
+      label: "Doctors",
+      icon: <UserCheck className="w-5 h-5" />,
+      caption: "Dr. Jenkins Connected",
+      color: "border-sky-100 bg-sky-50 text-sky-600",
+      activeColor: "bg-primary text-white border-primary shadow-lg shadow-primary/20",
+      position: "top-0 left-1/2 -translate-x-1/2 -translate-y-1/2",
+    },
+    {
+      id: 1,
+      label: "Receptionist",
+      icon: <Headset className="w-5 h-5" />,
+      caption: "Active Call Queue",
+      color: "border-emerald-100 bg-emerald-50 text-emerald-600",
+      activeColor: "bg-secondary text-white border-secondary shadow-lg shadow-secondary/20",
+      position: "top-1/2 left-full -translate-x-1/2 -translate-y-1/2",
+    },
+    {
+      id: 2,
+      label: "Scheduling",
+      icon: <Calendar className="w-5 h-5" />,
+      caption: "Appointment Booked!",
+      color: "border-sky-100 bg-sky-50 text-sky-600",
+      activeColor: "bg-primary text-white border-primary shadow-lg shadow-primary/20",
+      position: "top-full left-1/2 -translate-x-1/2 -translate-y-1/2",
+    },
+    {
+      id: 3,
+      label: "Missed Calls",
+      icon: <PhoneOff className="w-5 h-5" />,
+      caption: "Auto Callback Triggered",
+      color: "border-emerald-100 bg-emerald-50 text-emerald-600",
+      activeColor: "bg-secondary text-white border-secondary shadow-lg shadow-secondary/20",
+      position: "top-1/2 left-0 -translate-x-1/2 -translate-y-1/2",
+    },
+  ];
+
   return (
     <section className="relative pt-32 pb-20 md:pt-48 md:pb-36 overflow-hidden bg-slate-900 text-white">
       {/* Background Gradients & Effects */}
@@ -36,7 +84,7 @@ export default function Hero({ dict }: HeroProps) {
               className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-secondary/10 border border-secondary/20 text-secondary text-sm font-semibold shadow-inner"
             >
               <Shield className="w-4 h-4" />
-              <span>GDPR & HIPAA Compliant Secure Platform</span>
+              <span>{dict.tagline}</span>
             </motion.div>
 
             {/* Main Headline */}
@@ -114,129 +162,108 @@ export default function Hero({ dict }: HeroProps) {
             </motion.div>
           </div>
 
-          {/* Right Visual / Mockup */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-            className="lg:col-span-5 relative flex items-center justify-center"
-          >
-            {/* Dashboard Mockup Representation */}
-            <div className="relative w-full max-w-md md:max-w-none aspect-[4/3] bg-slate-900/80 rounded-2xl border border-slate-700/80 shadow-2xl shadow-primary/10 overflow-hidden backdrop-blur-md">
-              {/* Fake Window Header */}
-              <div className="h-12 bg-slate-950 border-b border-slate-800 flex items-center justify-between px-4">
-                <div className="flex gap-2">
-                  <div className="w-3 h-3 rounded-full bg-rose-500"></div>
-                  <div className="w-3 h-3 rounded-full bg-amber-500"></div>
-                  <div className="w-3 h-3 rounded-full bg-emerald-500"></div>
-                </div>
-                <div className="text-xs text-slate-500 font-semibold select-none">call360-dashboard.clinic</div>
-                <div className="w-10"></div>
-              </div>
+          {/* Right Visual / Orbit Visual Cluster */}
+          <div className="lg:col-span-5 relative w-full h-[450px] flex items-center justify-center select-none">
+            
+            {/* Background dashed orbit line */}
+            <div className="absolute w-[300px] h-[300px] rounded-full border border-dashed border-slate-700/40 pointer-events-none"></div>
+            
+            {/* Outer rotating decorative dot */}
+            <motion.div
+              animate={{ rotate: 360 }}
+              transition={{ repeat: Infinity, duration: 25, ease: "linear" }}
+              className="absolute w-[300px] h-[300px] rounded-full pointer-events-none"
+            >
+              <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3 h-3 bg-secondary/80 rounded-full shadow-lg shadow-secondary/50"></div>
+            </motion.div>
 
-              {/* Fake Dashboard Content */}
-              <div className="p-4 grid grid-cols-12 gap-3 h-[calc(100%-3rem)] bg-slate-950 text-slate-200">
-                {/* Sidebar (Left) */}
-                <div className="col-span-3 border-r border-slate-800/80 pr-2 space-y-3 hidden sm:block">
-                  <div className="h-6 bg-slate-800/60 rounded-md flex items-center px-2">
-                    <div className="w-2.5 h-2.5 rounded-full bg-secondary mr-2"></div>
-                    <div className="w-12 h-2.5 bg-slate-700/80 rounded"></div>
-                  </div>
-                  <div className="space-y-2 pt-2">
-                    {[1, 2, 3, 4, 5].map((i) => (
-                      <div key={i} className={`h-4 rounded flex items-center px-1.5 ${i === 1 ? "bg-primary/20" : ""}`}>
-                        <div className={`w-2 h-2 rounded-full mr-2 ${i === 1 ? "bg-primary" : "bg-slate-700"}`}></div>
-                        <div className="w-8 h-1.5 bg-slate-600 rounded"></div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Dashboard Main Panel */}
-                <div className="col-span-12 sm:col-span-9 space-y-4">
-                  {/* Header info */}
-                  <div className="flex justify-between items-center bg-slate-900/40 p-2.5 rounded-lg border border-slate-800/60">
-                    <div className="flex items-center gap-2">
-                      <div className="w-8 h-8 rounded-full bg-secondary/20 flex items-center justify-center text-xs text-secondary font-bold">C3</div>
-                      <div className="space-y-1">
-                        <div className="w-20 h-2 bg-slate-300 rounded"></div>
-                        <div className="w-12 h-1.5 bg-slate-600 rounded"></div>
-                      </div>
-                    </div>
-                    <div className="px-2.5 py-1 bg-secondary/15 rounded text-[10px] text-secondary font-bold">Active</div>
-                  </div>
-
-                  {/* Main Grid */}
-                  <div className="grid grid-cols-3 gap-3">
-                    <div className="bg-slate-900/80 p-3 rounded-xl border border-slate-800/80 flex flex-col justify-between h-20 shadow-sm">
-                      <div className="w-12 h-2 bg-slate-600 rounded"></div>
-                      <div className="w-8 h-5 bg-secondary/20 rounded text-secondary flex items-center justify-center font-bold text-xs">98%</div>
-                    </div>
-                    <div className="bg-slate-900/80 p-3 rounded-xl border border-slate-800/80 flex flex-col justify-between h-20 shadow-sm">
-                      <div className="w-16 h-2 bg-slate-600 rounded"></div>
-                      <div className="w-12 h-5 bg-primary/30 rounded text-sky-400 flex items-center justify-center font-bold text-xs">24 ms</div>
-                    </div>
-                    <div className="bg-slate-900/80 p-3 rounded-xl border border-slate-800/80 flex flex-col justify-between h-20 shadow-sm">
-                      <div className="w-14 h-2 bg-slate-600 rounded"></div>
-                      <div className="w-10 h-5 bg-emerald-500/20 rounded text-emerald-400 flex items-center justify-center font-bold text-xs">320</div>
-                    </div>
-                  </div>
-
-                  {/* Feed/Live calls list */}
-                  <div className="bg-slate-900/80 rounded-xl border border-slate-800/80 p-3 space-y-2.5">
-                    <div className="flex justify-between items-center">
-                      <div className="w-24 h-2.5 bg-slate-500 rounded"></div>
-                      <Sparkles className="w-3.5 h-3.5 text-secondary animate-pulse" />
-                    </div>
-                    <div className="space-y-2 pt-1">
-                      {[1, 2].map((i) => (
-                        <div key={i} className="flex items-center justify-between p-2 rounded bg-slate-950/80 border border-slate-800/40">
-                          <div className="flex items-center gap-2">
-                            <div className="w-6 h-6 rounded-full bg-slate-800 flex items-center justify-center text-[10px] font-semibold">P{i}</div>
-                            <div className="space-y-1">
-                              <div className="w-16 h-2 bg-slate-400 rounded"></div>
-                              <div className="w-10 h-1.5 bg-slate-600 rounded"></div>
-                            </div>
-                          </div>
-                          <div className="w-8 h-3 bg-secondary/15 rounded"></div>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                </div>
+            {/* Central Call360 Hub */}
+            <div className="relative w-28 h-28 bg-white border border-slate-100 rounded-full flex items-center justify-center shadow-xl z-20">
+              <div className="absolute -inset-3 rounded-full border border-secondary/20 animate-ping opacity-60 pointer-events-none"></div>
+              <div className="w-20 h-20 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center text-white font-extrabold text-lg shadow-inner">
+                Call360
               </div>
             </div>
 
-            {/* Floating Live Badge to visual impact */}
-            <motion.div
-              animate={{ y: [0, -10, 0] }}
-              transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
-              className="absolute -right-4 md:-right-6 top-1/4 bg-white p-4 rounded-xl shadow-xl border border-slate-100 text-slate-800"
-            >
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-secondary/15 rounded-full flex items-center justify-center text-secondary">
-                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
-                  </svg>
-                </div>
-                <div>
-                  <p className="text-xs text-slate-500 font-semibold uppercase tracking-wider">{dict.statsLabel}</p>
-                  <p className="text-lg font-bold text-slate-900">{dict.statsToday}</p>
-                </div>
-              </div>
-            </motion.div>
+            {/* Connecting flow lines and traveling dot indicators */}
+            <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+              {/* Vertical line segment */}
+              <div className="absolute top-[75px] bottom-[75px] w-0.5 bg-slate-800/60"></div>
+              {/* Horizontal line segment */}
+              <div className="absolute left-[75px] right-[75px] h-0.5 bg-slate-800/60"></div>
 
-            {/* Floating Live Performance Indicator */}
-            <motion.div
-              animate={{ y: [0, 8, 0] }}
-              transition={{ repeat: Infinity, duration: 5, ease: "easeInOut", delay: 1 }}
-              className="absolute -left-6 md:-left-8 bottom-1/4 bg-white px-4 py-3 rounded-xl shadow-xl border border-slate-100 text-slate-800 flex items-center gap-2"
-            >
-              <span className="w-2.5 h-2.5 rounded-full bg-secondary animate-ping"></span>
-              <span className="w-2.5 h-2.5 rounded-full bg-secondary absolute left-4"></span>
-              <span className="text-xs font-bold text-slate-700">99.8% Call Success</span>
-            </motion.div>
-          </motion.div>
+              {/* Dynamic traveling data packet dots */}
+              {activeNode === 0 && (
+                <motion.div
+                  key="dot-0"
+                  initial={{ y: 0 }}
+                  animate={{ y: -150 }}
+                  transition={{ repeat: Infinity, duration: 1.2, ease: "easeOut" }}
+                  className="absolute w-3 h-3 rounded-full bg-primary z-10 shadow-md shadow-primary"
+                />
+              )}
+              {activeNode === 1 && (
+                <motion.div
+                  key="dot-1"
+                  initial={{ x: 0 }}
+                  animate={{ x: 150 }}
+                  transition={{ repeat: Infinity, duration: 1.2, ease: "easeOut" }}
+                  className="absolute w-3 h-3 rounded-full bg-secondary z-10 shadow-md shadow-secondary"
+                />
+              )}
+              {activeNode === 2 && (
+                <motion.div
+                  key="dot-2"
+                  initial={{ y: 0 }}
+                  animate={{ y: 150 }}
+                  transition={{ repeat: Infinity, duration: 1.2, ease: "easeOut" }}
+                  className="absolute w-3 h-3 rounded-full bg-primary z-10 shadow-md shadow-primary"
+                />
+              )}
+              {activeNode === 3 && (
+                <motion.div
+                  key="dot-3"
+                  initial={{ x: 0 }}
+                  animate={{ x: -150 }}
+                  transition={{ repeat: Infinity, duration: 1.2, ease: "easeOut" }}
+                  className="absolute w-3 h-3 rounded-full bg-secondary z-10 shadow-md shadow-secondary"
+                />
+              )}
+            </div>
+
+            {/* Orbiting nodes */}
+            {orbitNodes.map((node) => {
+              const isActive = activeNode === node.id;
+              return (
+                <div key={node.id} className={`absolute ${node.position} z-20`}>
+                  <motion.div
+                    animate={isActive ? { scale: 1.15 } : { scale: 1 }}
+                    transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                    className={`w-14 h-14 rounded-2xl border flex items-center justify-center transition-colors duration-300 shadow-md ${
+                      isActive ? node.activeColor : node.color + " border-slate-100 bg-white"
+                    }`}
+                  >
+                    {node.icon}
+                  </motion.div>
+                  
+                  {/* Floating description tooltips */}
+                  <AnimatePresence>
+                    {isActive && (
+                      <motion.div
+                        initial={{ opacity: 0, scale: 0.8, y: 10 }}
+                        animate={{ opacity: 1, scale: 1, y: 0 }}
+                        exit={{ opacity: 0, scale: 0.8, y: 10 }}
+                        className="absolute whitespace-nowrap bg-slate-900 border border-slate-800 text-white text-[11px] font-bold px-3 py-1.5 rounded-lg shadow-lg top-16 left-1/2 -translate-x-1/2 z-30"
+                      >
+                        <div className="absolute w-2 h-2 bg-slate-900 border-l border-t border-slate-800 rotate-45 -top-1 left-1/2 -translate-x-1/2"></div>
+                        {node.caption}
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
+              );
+            })}
+          </div>
 
         </div>
       </div>

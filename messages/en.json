@@ -13,13 +13,14 @@
     "title": "Modernize Patient Communication and Clinic Management",
     "span": "Communication",
     "subtitle": "Centralize calls, appointments, doctors, patients and social interactions inside one intelligent, enterprise-grade platform.",
+    "tagline": "Optimized for medical practice communication workflows",
     "demoBtn": "Book a Meeting →",
     "videoBtn": "Watch Video",
     "statsToday": "+124 Today",
     "statsLabel": "Appointments"
   },
   "trustedBy": {
-    "title": "Trusted by Healthcare Leaders Worldwide"
+    "title": "Used by clinics, dental offices, and private practices in Algeria"
   },
   "features": {
     "title": "Everything you need to run your clinic smoothly",
@@ -115,9 +116,15 @@
   },
   "cta": {
     "title": "Transform the Way You Manage Patient Relationships",
-    "subtitle": "Empower your medical teams with a centralized communication platform and step into the future of healthcare.",
-    "demoBtn": "Book a Meeting →",
-    "salesBtn": "Talk to Sales"
+    "subtitle": "Get in touch with our team to find the best solution for your clinic.",
+    "nameLabel": "Full Name",
+    "namePlaceholder": "John Doe",
+    "emailLabel": "Email Address",
+    "emailPlaceholder": "john@example.com",
+    "messageLabel": "Your Message",
+    "messagePlaceholder": "Tell us about your clinic's needs...",
+    "submitBtn": "Book a Meeting →",
+    "successMsg": "Thank you! Your message has been sent successfully."
   },
   "footer": {
     "desc": "The leading healthcare communication and clinic management platform. Centralize your calls, appointments, and data in one secure place.",
